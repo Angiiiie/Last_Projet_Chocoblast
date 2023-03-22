@@ -8,6 +8,7 @@
 </head>
 <body>
     
-<h1>Error</h1>
+<h1>Error 404: La page n'existe pas</h1>
+
 </body>
 </html>

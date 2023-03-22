@@ -11,10 +11,10 @@ class Roles extends connectBdd{
         $this->nom_roles = $name;
     }
 
-    public function getIdRoles():?int{
+    public function getIdRoles(){
         return $this->id_roles;
     }
-    public function getNomRoles():?string{
+    public function getNomRoles(){
         return $this->nom_roles;
     }
     public function setNomRoles($name):void{
@@ -22,9 +22,24 @@ class Roles extends connectBdd{
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
-
 
 ?>
