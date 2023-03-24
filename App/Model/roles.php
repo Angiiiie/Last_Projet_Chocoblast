@@ -2,6 +2,8 @@
     namespace App\Model;
     use App\Utils\connectBdd;
 
+
+
 class Roles extends connectBdd{
     private $id_roles;
     private $nom_roles;
@@ -22,13 +24,22 @@ class Roles extends connectBdd{
     }
 
 
+    public function addRoles():void{
+        try{
+            //récupérer les données
+            $roles = $this->nom_roles;
 
+            //appel connexion
+            $req = $this->connexion()->prepare('INSERT INTO roles(nom_roles) VALUES(?)');
+            $req->bindParam(1, $roles, \PDO::PARAM_STR);
 
-
-
-
-
-
+            //executer la requête
+            $req->execute();
+        }
+        catch(\Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
 
 
 

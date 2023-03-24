@@ -34,7 +34,7 @@
                     $this->setPrenomUtilisateur($prenom);
                     $this->setPasswordUtilisateur($password);
                     //var_dump($this);
-                    
+
                     $this->addUser();
                     
                     $msg = "Le compte: ".$mail." a été ajouté en Bdd";
